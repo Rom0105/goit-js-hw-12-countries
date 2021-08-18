@@ -16,6 +16,26 @@ body {
   font-size: 30px;
 }
 
+a {
+  text-decoration: none;
+}
+
+.js-list {
+  margin-top: 100px;
+
+  text-align: center;
+  list-style: none;
+}
+
+.js-list-title {
+  display: inline-block;
+
+  margin-top: 10px;
+  margin-bottom: 0;
+
+  color: black;
+}
+
 .card {
   display: flex;
   justify-content: center;
