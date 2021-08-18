@@ -9,7 +9,6 @@ body {
 
   display: flex;
 
-  margin-top: 200px;
   margin-left: auto;
   margin-right: auto;
 
@@ -56,4 +55,8 @@ a {
 
 .list-item {
   font-size: 30px;
+}
+
+.search-form {
+  margin-top: 200px;
 }
