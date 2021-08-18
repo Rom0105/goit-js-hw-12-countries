@@ -8,12 +8,8 @@ function updateCountriesList(data) {
   const markupCountries = countryCard(data);
   const markupCountrie = countryList(data);
 
-  if (data.status === 404) {
-    error({
-      text: 'Nothing found ☹',
-      delay: 2000,
-    });
-  }
+  dataStatus(data);
+
   if (data.length === 1) {
     cardContainer.insertAdjacentHTML('beforeend', markupCountries);
     return;
@@ -27,6 +23,15 @@ function updateCountriesList(data) {
     return;
   }
   cardContainer.insertAdjacentHTML('beforeend', markupCountrie);
+}
+
+function dataStatus(data) {
+  if (data.status === 404) {
+    error({
+      text: 'Nothing found ☹',
+      delay: 2000,
+    });
+  }
 }
 
 export default updateCountriesList;
