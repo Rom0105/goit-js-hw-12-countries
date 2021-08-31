@@ -1,4 +1,5 @@
 body {
+  padding: 100px;
   background-image: url('../images/bg-pattern.png');
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -55,8 +56,4 @@ a {
 
 .list-item {
   font-size: 30px;
-}
-
-.search-form {
-  margin-top: 200px;
 }
